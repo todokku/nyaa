@@ -82,7 +82,7 @@ RECAPTCHA_PRIVATE_KEY = '***'
 
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 if USE_MYSQL:
-    SQLALCHEMY_DATABASE_URI = ('mysql://d6rqxtxbnsr87ob5:w8mrvccopimpf7fa@z1ntn1zv0f1qbh8u.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/zbhbobs3zgmln74a?charset=utf8mb4')
+    SQLALCHEMY_DATABASE_URI = ('mysql://d6rqxtxbnsr87ob5:w8mrvccopimpf7fa@z1ntn1zv0f1qbh8u.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/zbhbobs3zgmln74a')
 else:
     SQLALCHEMY_DATABASE_URI = (
         'sqlite:///' + os.path.join(BASE_DIR, 'test.db') + '?check_same_thread=False')

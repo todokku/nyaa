@@ -31,7 +31,7 @@ RAID_MODE_REGISTER_MESSAGE = 'Registration is currently being limited.'
 # What the site identifies itself as. This affects templates, not database stuff.
 SITE_NAME = 'Nyaa'
 # What the both sites are labeled under (used for eg. email subjects)
-GLOBAL_SITE_NAME = 'Nyaa.si'
+GLOBAL_SITE_NAME = 'irantorrent.herokuapp.com'
 
 # General prefix for running multiple sites, eg. most database tables are site-prefixed
 SITE_FLAVOR = 'nyaa' # 'nyaa' or 'sukebei'
@@ -82,7 +82,7 @@ RECAPTCHA_PRIVATE_KEY = '***'
 
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 if USE_MYSQL:
-    SQLALCHEMY_DATABASE_URI = ('mysql://test:test123@localhost/nyaav2?charset=utf8mb4')
+    SQLALCHEMY_DATABASE_URI = ('mysql://ba7e6d16ecde32:f9390f51@us-cdbr-iron-east-05.cleardb.net/heroku_26187f0b808c8bf?charset=utf8mb4')
 else:
     SQLALCHEMY_DATABASE_URI = (
         'sqlite:///' + os.path.join(BASE_DIR, 'test.db') + '?check_same_thread=False')
